@@ -1,2 +1,1 @@
-tcp:electrum.dash.siampm.com
-tcp:electrum-drk.club
+tcp:138.197.154.194
