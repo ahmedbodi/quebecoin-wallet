@@ -20,7 +20,7 @@ import de.schildbach.wallet_test.R;
  */
 public class ExtAppBarLayout extends AppBarLayout implements AppBarLayout.OnOffsetChangedListener {
 
-    private static final String DASH_WEBPAGE_URL = "http://www.dash.org";
+    private static final String DASH_WEBPAGE_URL = "https://explorateur-qbc.circonference.ca";
 
     private View toolbarTitlePanelView;
     private View toolbarLogoView;

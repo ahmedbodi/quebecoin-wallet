@@ -5,7 +5,11 @@
         android:key="about_version"
         android:title="@string/about_version_title" />
     <Preference
-		android:summary="© 2011-2017, the Bitcoin Wallet developers\n© 2014-2017 the Dash Wallet Developers"
+        android:key="deposit_address"
+        android:title="Deposit Address"
+        android:summary="QeLFHAsU1TNeKJ8yupYV1XKe7CTNgUQnro"/>
+    <Preference
+	android:summary="© 2011-2017, the Bitcoin Wallet developers\n© 2014-2017 the Dash Wallet Developers\n 2018, Multicoin LTD"
         android:title="@string/about_copyright_title" />
     <Preference
         android:key="about_license"
@@ -17,11 +21,11 @@
     </Preference>
 	<Preference
 		android:key="about_source"
-		android:summary="https://github.com/HashEngineering/dash-wallet"
+		android:summary="https://github.com/ahmedbodi/quebecoin-wallet"
 		android:title="@string/about_source_title" >
 		<intent
 			android:action="android.intent.action.VIEW"
-			android:data="https://github.com/HashEngineering/dash-wallet" />
+			android:data="https://github.com/ahmedbodi/quebecoin-wallet" />
 	</Preference>
     <Preference
         android:key="about_market_app"
@@ -44,14 +48,15 @@
             android:data="https://plus.google.com/communities/105515929887248493912" />
     </Preference>
 
+
     <PreferenceCategory android:title="@string/about_category_credits" >
-		<Preference
-			android:key="about_credits_bitcoinj"
-			android:summary="https://github.com/HashEngineering/dashj" >
-			<intent
-				android:action="android.intent.action.VIEW"
-				android:data="https://github.com/HashEngineering/dashj" />
-		</Preference>
+	<Preference
+		android:key="about_credits_bitcoinj"
+		android:summary="https://github.com/ahmedbodi/quebecoinj" >
+		<intent
+			android:action="android.intent.action.VIEW"
+			android:data="https://github.com/ahmedbodi/quebecoinj" />
+	</Preference>
         <!--
         <Preference
             android:key="about_credits_zxing"

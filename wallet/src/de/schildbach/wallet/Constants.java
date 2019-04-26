@@ -111,16 +111,18 @@ public final class Constants {
 
     private static final String BITEASY_API_URL_PROD = CoinDefinition.UNSPENT_API_URL;//"https://api.biteasy.com/blockchain/v1/";
     private static final String BITEASY_API_URL_TEST = "https://api.biteasy.com/testnet/v1/";
+
     /** Base URL for blockchain API. */
     public static final String BITEASY_API_URL = NETWORK_PARAMETERS.getId().equals(NetworkParameters.ID_MAINNET) ? BITEASY_API_URL_PROD
             : BITEASY_API_URL_TEST;
 
     /** Currency code for the wallet name resolver. */
     public static final String WALLET_NAME_CURRENCY_CODE = NETWORK_PARAMETERS.getId()
-            .equals(NetworkParameters.ID_MAINNET) ? "dash" : "tdash";
+            .equals(NetworkParameters.ID_MAINNET) ? "qbc" : "tqbc";
 
     /** URL to fetch version alerts from. */
     public static final HttpUrl VERSION_URL = HttpUrl.parse("https://wallet.schildbach.de/version");
+
     /** URL to fetch dynamic fees from. */
     public static final HttpUrl DYNAMIC_FEES_URL = HttpUrl.parse("https://wallet.schildbach.de/fees");
 
@@ -144,10 +146,10 @@ public final class Constants {
             ? CoinDefinition.DONATION_ADDRESS : null;
 
     /** Recipient e-mail address for reports. */
-    public static final String REPORT_EMAIL = "hashengineeringsolutions@gmail.com";
+    public static final String REPORT_EMAIL = "admin@multicoin.co";
 
     /** Subject line for manually reported issues. */
-    public static final String REPORT_SUBJECT_ISSUE = "Dash Wallet: Reported issue";
+    public static final String REPORT_SUBJECT_ISSUE = "QBC Wallet: Reported issue";
 
     /** Subject line for crash reports. */
     public static final String REPORT_SUBJECT_CRASH = "Crash report";
@@ -226,7 +228,7 @@ public final class Constants {
     //Dash Specific
     public static long EARLIEST_HD_SEED_CREATION_TIME = 1427610960l;
 
-    public static String WALLET_URI_SCHEME = "dashwallet";
+    public static String WALLET_URI_SCHEME = "qbcwallet";
 
     public static boolean ENABLE_ZERO_FEES = TEST; //Enable Zero Fee's on TestNet only.
 }
